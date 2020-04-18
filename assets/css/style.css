@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+body {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 850px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.btn-row {
+    margin-top: 200px;
+}
+
+.btn {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-row {
+        margin-top: 20px;
+    }
+}

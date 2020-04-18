@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHILLS GIVE ME THRILLS</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container ">
+        <div class="row btn-row">
+            <div class="col-6 col-md-3">
+                <button type="button" class="btn btn-warning" onclick="play('One')">Number 1</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <button type="button" class="btn btn-warning" onclick="play('Three')">Number 3</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <button type="button" class="btn btn-warning" onclick="play('Four')">Number 4</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <button type="button" class="btn btn-warning" onclick="play('Five')">Number 5</button>
+            </div>
+        </div>
+        <div class="row btn-row">
+            <div class="col-6 col-md-3">
+                <button type="button" class="btn btn-warning" onclick="play('Six')">Number 6</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <button type="button" class="btn btn-warning" onclick="play('Seven')">Number 7</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <button type="button" class="btn btn-warning" onclick="play('Eight')">Number 8</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <button type="button" class="btn btn-warning" onclick="play('Nine')">Number 9</button>
+            </div>
+        </div>
+        <div class="row btn-row">
+            <div class="col-6 col-md-3">
+                <button type="button" class="btn btn-warning" onclick="play('Ten')">Number 10</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <button type="button" class="btn btn-warning" onclick="play('Eleven')">Number 11</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <button type="button" class="btn btn-warning" onclick="play('Challenge')">Challenge</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="audio">
+        <audio id="audioOne" src="assets/audio/Number1.wav"></audio>
+        <audio id="audioThree" src="assets/audio/Number3.wav"></audio>
+        <audio id="audioFour" src="assets/audio/Number4.wav"></audio>
+        <audio id="audioFive" src="assets/audio/Number5.wav"></audio>
+        <audio id="audioSix" src="assets/audio/Number6.wav"></audio>
+        <audio id="audioSeven" src="assets/audio/Number7.wav"></audio>
+        <audio id="audioEight" src="assets/audio/Number8.wav"></audio>
+        <audio id="audioNine" src="assets/audio/Number9.wav"></audio>
+        <audio id="audioTen" src="assets/audio/Number10.wav"></audio>
+        <audio id="audioEleven" src="assets/audio/Number11.wav"></audio>
+        <audio id="audioChallenge" src="assets/audio/Challenge.wav"></audio>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        function play(value) {
+            var audio = document.getElementById("audio" + value);
+            audio.play();
+      }
+    </script>
+</body>
+</html>
